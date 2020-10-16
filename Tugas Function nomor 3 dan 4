@@ -1,0 +1,293 @@
+#author : 19523172 , 19523217
+
+
+#Exercise 3
+
+#1.1.f(x)=X^3+x^2-6
+f <- function(x) {
+  result <- x^3+x^2-6
+  return(result)
+}
+f(x)
+
+#1.2.g(a,b)=ab(b???a)
+g <- function(a,b) {
+  result <- a*b*(b???a)
+  return(result)
+}
+g(a,b)
+
+#1.3.h(m,n)=(???m/n)+m???2n
+h <- function(m,n) {
+  result <- (sqrt(m)/n)+m???2*n
+  return(result)
+}
+h(m,n)
+
+#2.1.f(a,b)=(a+b)ab
+a <- matrix(c(1,2,3,4),2,2,TRUE)
+b <- matrix(c(8,7,6,5),2,2,TRUE)
+f <- function(a,b){
+  result <- (a+b)%*%a%*%b
+  return(result)
+}
+f(a,b)
+
+#2.2.h(m,n)=|m|n???mn
+m <- matrix(c(4,3,2,1),2,2,TRUE)
+n <- matrix(c(5,6,7,8),2,2,TRUE)
+h <- function(m,n){
+  result <- (det(m)*n)-(m%*%n)
+  return(result)
+}
+h(m,n)
+
+#2.3.g(x)=x'x???2x
+x <- matrix(c(3,4,5,6),2,2,TRUE)
+g <- function(x){
+  result <- (solve(x)*x)-(2*x)
+  return(result)
+}
+g(x)
+
+
+
+#exercise 4
+# f(x) = sin(x)
+f <- function(x){
+  fx <- sin(x)
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "f(x)"
+     
+)
+
+# f(x) = log(x)
+f <- function(x){
+  fx <- log(x)
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "f(x)"
+     
+)
+
+# f(x) = sqrt(x) - 2
+f <- function(x){
+  fx <- sqrt(x)-2
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "f(x)"
+     
+)
+
+
+# f(x) = sqrt(x-2)
+f <- function(x){
+  fx <- sqrt(x-2)
+  return(fx)
+}
+
+input <- -10:0
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "f(x)"
+     
+)
+
+# f(x) = sqrt(2-x)
+f <- function(x){
+  fx <- sqrt(2-x)
+  return(fx)
+}
+
+input <- -5:0
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "f(x)"
+     
+)
+
+# y = x^3
+f <- function(x){
+  fx <- x^3
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+ # y = 2*x^3 -x +5
+f <- function(x){
+  fx <- 2*x^3 + 0*x^2 -x +5
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^3
+f <- function(x){
+  fx <- -x^3
+  return(fx)
+}
+
+input <- 0:5
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^4
+f <- function(x){
+  fx <- x^4
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^4 - 3*x^3+2*x^2+x-1
+f <- function(x){
+  fx <- x^4 - 3*x^3+2*x^2+x-1
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = -x^4
+f <- function(x){
+  fx <- -x^4
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^3-2*x^2 -3*x+4
+f <- function(x){
+  fx <- x^3-2*x^2 -3*x+4
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^3-3*x^2 +3*x-1
+f <- function(x){
+  fx <- x^3-3*x^2 +3*x-1
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = -x^3+2*x^2 +3*x-4
+f <- function(x){
+  fx <- -x^3+2*x^2 +3*x-4
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^4-x^3-x^2+x+1
+f <- function(x){
+  fx <- x^4-x^3-x^2+x+1
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = x^4-4*x^3+6*x^2-4*x
+f <- function(x){
+  fx <- x^4-4*x^3+6*x^2-4*x
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
+
+# y = -x^4-2*x^3+3*x
+f <- function(x){
+  fx <- -x^4-2*x^3+3*x
+  return(fx)
+}
+
+input <- 1:10
+plot(input, sapply(input,f),
+     type = "p",
+     xlab = "x",
+     ylab = "y"
+     
+)
